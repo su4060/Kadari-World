@@ -4,6 +4,58 @@
   <title>Kadari's world</title>
   <meta charset="utf-8">
 
+<style>
+#active {
+  color:red;
+}
+a{
+  color:black;
+  text-decoration: none;
+}
+h1{
+  font-size:45px;
+  text-align:center;
+  border-bottom:1px solid gray;
+  margin:0;
+  padding:20px;
+}
+h2{
+  border-bottom:1px solid grey;
+  padding:20px;
+  margin:0
+}
+ol{
+  border-right:1px solid grey;
+  width:100px;
+  margin:0;
+  padding:20px;
+}
+body{
+  margin:0
+}
+#grid{
+  display: grid;
+  grid-template-columns: 150px 1fr;
+}
+#grid ol{
+  padding-left:30px;
+}
+#grid #article{
+  padding-left:40px;
+}
+@media(max-widht:800px){
+  #grid:(
+    display:none;
+    )
+    ol{
+    h{[
+      border-right:none
+      ]}
+    }
+
+    }
+}
+</style>
   <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-116123291-1"></script>
 <script>
@@ -20,13 +72,15 @@
 <h1><a href="index.html">Kadari's World</a>
 </h1>
 <h2>Kadari's Favourite Musicians</h2>
+
+<div id="grid">
   <ol>
     <li><a href="2.html">xxxtentacion</a>
     </li>
   </ol>
-
-<h3> 내가 X가 좋아진 이유.</h3>
-<img src=xxxtentacion.jpg width="44%">
+  <div id="article">
+<p> 내가 X가 좋아진 이유.</p>
+<img src=xxxtentacion.jpg width="77%">
 
 <p>아마 확실한 이유는 그의 첫번째 앨범 17 때문이었을 것이다. <br>
 그리고 처음 들었던 노래는... Look at me! 였을텐데 <br>힙합에 별로 친근하지 않았던 덕에 이 노래를 듣고 엄청나게 좋은 인상을 주진 않았다.
@@ -40,8 +94,8 @@
   그리고 대부분의 노래가 평균적으로 짧아서 앨범 자체로도 트랙은 많지만 다른 뮤지션들의 앨범에 비해서 러닝타임이 현저히 짧다.<br>
 </p>
 
-<h3> Favourtie Track </h3>
-<img src=17.jpg>
+<p> Favourtie Track </p>
+<img 4 width="77%">
 <p>
   아직 앨범이 두개밖에 없다. 이 앨범을 듣고 빠진게 얼마 되지 않은 것 같은데 갑작스럽게 두번째 앨범?<br>
   (앨범 이름이 ?이다) 을 발매하며 나를 놀라게 했다. 어쨋든 이 앨범에서 자주 듣고 좋아했던 트랙은<br>
@@ -51,7 +105,7 @@
   타듯이 워낙 트랙들도 짧고 금방금방 넘어가기에 하나의 이야기를 듣는 듯한 느낌을 받는다고 생각한다.
 </p>
 
-  <img src=secondalbum.jpg>
+  <img src=secondalbum.jpg width="77%">
 
   <p>
     이 앨범을 이야기하자면, 정말 갑자기 발매되어서 나를 두번 깜짝놀라게 했다. 첫번째 앨범을 즐겨듣는 찰나에 <br>
@@ -70,6 +124,8 @@
   <정말 최근의 라이브 영상인 듯 하다.> <br>
   <iframe width="560" height="315" src="https://www.youtube.com/embed/_kBJepNFG14" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 </p>
+</div>
+</div>
 <p>
   <div id="disqus_thread"></div>
   <script>
