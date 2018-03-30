@@ -4,6 +4,58 @@
   <title>Kadari's world</title>
   <meta charset="utf-8">
 
+  <style>
+  #active {
+    color:red;
+  }
+  a{
+    color:black;
+    text-decoration: none;
+  }
+  h1{
+    font-size:45px;
+    text-align:center;
+    border-bottom:1px solid gray;
+    margin:0;
+    padding:20px;
+  }
+  h2{
+    border-bottom:1px solid grey;
+    padding:20px;
+    margin:0
+  }
+  ol{
+    border-right:1px solid grey;
+    width:100px;
+    margin:0;
+    padding:20px;
+  }
+  body{
+    margin:0
+  }
+  #grid{
+    display: grid;
+    grid-template-columns: 150px 1fr;
+  }
+  #grid ol{
+    padding-left:30px;
+  }
+  #grid #article{
+    padding-left:40px;
+  }
+  @media(max-widht:800px){
+    #grid:(
+      display:none;
+      )
+      ol{
+      h{[
+        border-right:none
+        ]}
+      }
+
+      }
+  }
+  </style>
   <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-116123291-1"></script>
 <script>
@@ -20,11 +72,15 @@
 <h1><a href="index.html">Kadari's World</a>
 </h1>
 <h2>Kadari's Favourite Musicians</h2>
+
+<div id="grid">
+
   <ol>
     <li><a href="2.html">xxxtentacion</a>
     </li>
   </ol>
 
+  <div id="article">
   <p>
   <img src="photo.jpg" width="44%">
 </p><p style="margin-top:45px;"> 이 웹사이트는 생활코딩을 통해 닉네임 Kadari을 사용하는 <br>
